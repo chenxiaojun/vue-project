@@ -1,0 +1,394 @@
+[
+  {
+    "r": {
+      "identity": 9,
+      "start": 26,
+      "end": 25,
+      "type": "FRIENDS",
+      "properties": {
+
+      },
+      "elementId": "9",
+      "startNodeElementId": "26",
+      "endNodeElementId": "25"
+    },
+    "n1": {
+      "identity": 26,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Liz",
+        "age": 34
+      },
+      "elementId": "26"
+    },
+    "n2": {
+      "identity": 25,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Mike",
+        "age": 25
+      },
+      "elementId": "25"
+    }
+  },
+  {
+    "r": {
+      "identity": 10,
+      "start": 27,
+      "end": 23,
+      "type": "FRIENDS",
+      "properties": {
+        "since": 2001
+      },
+      "elementId": "10",
+      "startNodeElementId": "27",
+      "endNodeElementId": "23"
+    },
+    "n1": {
+      "identity": 27,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Shawn",
+        "age": 32
+      },
+      "elementId": "27"
+    },
+    "n2": {
+      "identity": 23,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Sally"
+      },
+      "elementId": "23"
+    }
+  },
+  {
+    "r": {
+      "identity": 11,
+      "start": 27,
+      "end": 22,
+      "type": "FRIENDS",
+      "properties": {
+        "since": 2012
+      },
+      "elementId": "11",
+      "startNodeElementId": "27",
+      "endNodeElementId": "22"
+    },
+    "n1": {
+      "identity": 27,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Shawn",
+        "age": 32
+      },
+      "elementId": "27"
+    },
+    "n2": {
+      "identity": 22,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "John",
+        "age": 44
+      },
+      "elementId": "22"
+    }
+  },
+  {
+    "r": {
+      "identity": 12,
+      "start": 25,
+      "end": 27,
+      "type": "FRIENDS",
+      "properties": {
+        "since": 2006
+      },
+      "elementId": "12",
+      "startNodeElementId": "25",
+      "endNodeElementId": "27"
+    },
+    "n1": {
+      "identity": 25,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Mike",
+        "age": 25
+      },
+      "elementId": "25"
+    },
+    "n2": {
+      "identity": 27,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Shawn",
+        "age": 32
+      },
+      "elementId": "27"
+    }
+  },
+  {
+    "r": {
+      "identity": 13,
+      "start": 23,
+      "end": 24,
+      "type": "FRIENDS",
+      "properties": {
+        "since": 2006
+      },
+      "elementId": "13",
+      "startNodeElementId": "23",
+      "endNodeElementId": "24"
+    },
+    "n1": {
+      "identity": 23,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Sally"
+      },
+      "elementId": "23"
+    },
+    "n2": {
+      "identity": 24,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Steve"
+      },
+      "elementId": "24"
+    }
+  },
+  {
+    "r": {
+      "identity": 14,
+      "start": 26,
+      "end": 22,
+      "type": "MARRIED",
+      "properties": {
+        "since": 1998
+      },
+      "elementId": "14",
+      "startNodeElementId": "26",
+      "endNodeElementId": "22"
+    },
+    "n1": {
+      "identity": 26,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Liz",
+        "age": 34
+      },
+      "elementId": "26"
+    },
+    "n2": {
+      "identity": 22,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "John",
+        "age": 44
+      },
+      "elementId": "22"
+    }
+  },
+  {
+    "r": {
+      "identity": 15,
+      "start": 22,
+      "end": 29,
+      "type": "BORN_IN",
+      "properties": {
+        "year": 1978
+      },
+      "elementId": "15",
+      "startNodeElementId": "22",
+      "endNodeElementId": "29"
+    },
+    "n1": {
+      "identity": 22,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "John",
+        "age": 44
+      },
+      "elementId": "22"
+    },
+    "n2": {
+      "identity": 29,
+      "labels": [
+        "Location"
+      ],
+      "properties": {
+        "city": "Boston",
+        "state": "MA"
+      },
+      "elementId": "29"
+    }
+  },
+  {
+    "r": {
+      "identity": 16,
+      "start": 26,
+      "end": 29,
+      "type": "BORN_IN",
+      "properties": {
+        "year": 1981
+      },
+      "elementId": "16",
+      "startNodeElementId": "26",
+      "endNodeElementId": "29"
+    },
+    "n1": {
+      "identity": 26,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Liz",
+        "age": 34
+      },
+      "elementId": "26"
+    },
+    "n2": {
+      "identity": 29,
+      "labels": [
+        "Location"
+      ],
+      "properties": {
+        "city": "Boston",
+        "state": "MA"
+      },
+      "elementId": "29"
+    }
+  },
+  {
+    "r": {
+      "identity": 17,
+      "start": 25,
+      "end": 32,
+      "type": "BORN_IN",
+      "properties": {
+        "year": 1960
+      },
+      "elementId": "17",
+      "startNodeElementId": "25",
+      "endNodeElementId": "32"
+    },
+    "n1": {
+      "identity": 25,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Mike",
+        "age": 25
+      },
+      "elementId": "25"
+    },
+    "n2": {
+      "identity": 32,
+      "labels": [
+        "Location"
+      ],
+      "properties": {
+        "city": "San Francisco",
+        "state": "CA"
+      },
+      "elementId": "32"
+    }
+  },
+  {
+    "r": {
+      "identity": 18,
+      "start": 27,
+      "end": 28,
+      "type": "BORN_IN",
+      "properties": {
+        "year": 1960
+      },
+      "elementId": "18",
+      "startNodeElementId": "27",
+      "endNodeElementId": "28"
+    },
+    "n1": {
+      "identity": 27,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Shawn",
+        "age": 32
+      },
+      "elementId": "27"
+    },
+    "n2": {
+      "identity": 28,
+      "labels": [
+        "Location"
+      ],
+      "properties": {
+        "city": "Miami",
+        "state": "FL"
+      },
+      "elementId": "28"
+    }
+  },
+  {
+    "r": {
+      "identity": 19,
+      "start": 24,
+      "end": 30,
+      "type": "BORN_IN",
+      "properties": {
+        "year": 1970
+      },
+      "elementId": "19",
+      "startNodeElementId": "24",
+      "endNodeElementId": "30"
+    },
+    "n1": {
+      "identity": 24,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Steve"
+      },
+      "elementId": "24"
+    },
+    "n2": {
+      "identity": 30,
+      "labels": [
+        "Location"
+      ],
+      "properties": {
+        "city": "Lynn",
+        "state": "MA"
+      },
+      "elementId": "30"
+    }
+  }
+]
