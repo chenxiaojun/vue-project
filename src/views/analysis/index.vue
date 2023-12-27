@@ -95,7 +95,7 @@
           <el-input v-model="data.target_msg" :disabled="!isCreate" />
         </el-form-item>
         <el-form-item label="概率结果" prop="percent">
-          <el-input-number v-model="data.percent" :precision="2" :step="0.05" :min="0" :max="1"></el-input-number>
+          <el-input-number v-model="data.percent" :precision="2" :step="0.05" :min="0" :max="1" />
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">

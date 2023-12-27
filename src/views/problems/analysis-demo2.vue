@@ -28,7 +28,7 @@ export default {
       },
       listLoading: false,
       eventids: this.$route.query.event_id || [],
-      type: this.$route.query.type || 'analysis',
+      type: this.$route.query.type || 'analysis'
     }
   },
   mounted() {
@@ -64,7 +64,7 @@ export default {
           hierarchicalRepulsion: {
             nodeDistance: 400
           },
-          solver: "forceAtlas2Based",
+          solver: 'forceAtlas2Based',
           forceAtlas2Based: {
             gravitationalConstant: -200,
             centralGravity: 0.01,
@@ -121,7 +121,7 @@ export default {
           selectConnectedEdges: true, // 选择节点后是否显示连接线
           hoverConnectedEdges: true, // 鼠标滑动节点后是否显示连接线
           zoomView: true // 是否能缩放画布
-        },
+        }
       }
       const network = new Network(container, this.data, this.options)
 
@@ -131,11 +131,11 @@ export default {
         const ip = this.data.nodes.find(n => n.id === nodeId).ip
         const message = this.data.nodes.find(n => n.id === nodeId).message
         const date = this.data.nodes.find(n => n.id === nodeId).created_at
-        const ul = '<ul>'
-              + '<li>IP：'+ ip + '</li>'
-              + '<li>告警内容：' + message + '</li>'
-              + '<li>告警时间：' + date + '</li>'
-              + '</ul>'
+        const ul = '<ul>' +
+              '<li>IP：' + ip + '</li>' +
+              '<li>告警内容：' + message + '</li>' +
+              '<li>告警时间：' + date + '</li>' +
+              '</ul>'
         const divHoverNode = document.getElementById('divHoverNode')
         divHoverNode.innerHTML = ul
         divHoverNode.style.display = 'block'
@@ -162,7 +162,7 @@ export default {
       this.data.nodes = this.data.nodes.map((t) => {
         return {
           ...t,
-          label: `${t.ip}\n\n${t.message.slice(0,64)}`,
+          label: `${t.ip}\n\n${t.message.slice(0, 64)}`,
           message: `${t.ip}\n\n${t.message}`
         }
       })
@@ -172,12 +172,12 @@ export default {
     //   return [label.toString(), color]
     // },
     matchColor(value) {
-      return value > 0.9 ? '#B81A1A' :
-             value > 0.8 ? '#F64235' :
-             value > 0.6 ? '#FFA05C' :
-             value > 0.4 ? '#FFC960' :
-             value > 0.2 ? '#95CDCD' :
-             '#97AAB3'
+      return value > 0.9 ? '#B81A1A'
+        : value > 0.8 ? '#F64235'
+          : value > 0.6 ? '#FFA05C'
+            : value > 0.4 ? '#FFC960'
+              : value > 0.2 ? '#95CDCD'
+                : '#97AAB3'
     },
     groupNodes() {
       // 根据ip进行分组

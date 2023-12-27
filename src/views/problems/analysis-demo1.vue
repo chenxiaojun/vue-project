@@ -114,11 +114,11 @@ export default {
         const ip = this.data.nodes.find(n => n.id === nodeId).ip
         const label = this.data.nodes.find(n => n.id === nodeId).label
         const date = this.data.nodes.find(n => n.id === nodeId).created_at
-        const ul = '<ul>'
-              + '<li>IP：'+ ip + '</li>'
-              + '<li>告警内容：' + label + '</li>'
-              + '<li>告警时间：' + date + '</li>'
-              + '</ul>'
+        const ul = '<ul>' +
+              '<li>IP：' + ip + '</li>' +
+              '<li>告警内容：' + label + '</li>' +
+              '<li>告警时间：' + date + '</li>' +
+              '</ul>'
         const divHoverNode = document.getElementById('divHoverNode')
         divHoverNode.innerHTML = ul
         divHoverNode.style.display = 'block'
@@ -153,12 +153,12 @@ export default {
       return [label.toString(), color]
     },
     matchColor(value) {
-      return value > 0.9 ? '#B81A1A' :
-             value > 0.8 ? '#F64235' :
-             value > 0.6 ? '#FFA05C' :
-             value > 0.4 ? '#FFC960' :
-             value > 0.2 ? '#95CDCD' :
-             '#97AAB3'
+      return value > 0.9 ? '#B81A1A'
+        : value > 0.8 ? '#F64235'
+          : value > 0.6 ? '#FFA05C'
+            : value > 0.4 ? '#FFC960'
+              : value > 0.2 ? '#95CDCD'
+                : '#97AAB3'
     },
     groupNodes() {
       // 根据ip进行分组
