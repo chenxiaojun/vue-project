@@ -106,20 +106,34 @@ export const constantRoutes = [
       }
     ]
   },
+  
   {
-    path: '/ricky-demos',
+    path: '/d3',
     component: Layout,
-    redirect: '/ricky-demos/index',
     alwaysShow: true,
-    hidden: true,
-    name: '实验室',
-    meta: { title: '实验室', icon: 'el-icon-monitor' },
+    name: 'd3学习',
+    meta: { title: 'd3学习', icon: 'el-icon-monitor' },
     children: [
       {
-        path: 'index',
-        name: 'demo',
-        component: () => import('@/views/ricky-demos/index'),
-        meta: { title: 'demo', icon: 'el-icon-mouse' }
+        path: 'base01',
+        name: 'base01',
+        hidden: false,
+        component: () => import('@/views/d3/base01'),
+        meta: { title: 'base01', icon: 'el-icon-tickets' }
+      },
+      {
+        path: 'base02',
+        name: 'base02',
+        hidden: false,
+        component: () => import('@/views/d3/base02'),
+        meta: { title: 'base02', icon: 'el-icon-tickets' }
+      },
+      {
+        path: 'base03',
+        name: 'base03',
+        hidden: false,
+        component: () => import('@/views/d3/base03'),
+        meta: { title: 'base03', icon: 'el-icon-tickets' }
       }
     ]
   },
